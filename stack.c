@@ -18,35 +18,37 @@ void main()
  switch(choice)
  {
  case 1:
- {
+ 
  push();
  break;
- }
+ 
  case 2:
- {
+ 
  pop();
  break;
- }
+ 
  case 3:
- {
+ 
  display();
  break;
- }
+ 
+ case 4:
+ 
+ printf("\n\tEXIT POINT");
+ break;
  default:
  {
  printf("\n\t please enter a valid choice(1/2/3/4)");
- 
  }
  }
- 
- 
- 
- while(choice!=40);
- 
  }
+ while(choice!=4);
+ }
+ 
+ 
  void push()
  {
- if (top<=n-1)
+ if (top>=n-1)
  {
  printf("\n\tStack is overflow");
  }
@@ -60,7 +62,7 @@ void main()
  }
  void pop()
  {
- if(top=-1)
+ if(top<=-1)
  {
  printf("\n\t STACK is underflow");
  }
@@ -77,13 +79,14 @@ void main()
  printf("\n the elements in STACK \n");
  for(i=top;i>=0;i--)
  printf("\n%d",stack[i]);
- }
+}
  else
  {
  printf("\n the stack is empty");
  }
  }
- }
+ 
+ 
  
  
  
